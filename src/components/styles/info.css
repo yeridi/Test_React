@@ -29,11 +29,10 @@
 .models__info p{
     text-align: justify;
 }
-.models__info img{
-    display: block;
+.model__info__3d{
     margin: auto;
-    width: 80%;
-    height: 250px;
+    width: 90%;
+    height: 340px;
 }
 
 @media (max-width: 800px){
@@ -43,5 +42,8 @@
     }
     .models__info{
         margin: 1rem;
+    }
+    .model__info__3d{
+        width: 100%;
     }
 }

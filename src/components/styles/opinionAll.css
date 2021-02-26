@@ -1,0 +1,23 @@
+/* body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} */
+.opinion__all{
+    width: 100%;
+    overflow: hidden;
+}
+.opinion__all__container{
+    display: flex;
+}
+.example__opinion{
+    display: flex;
+    width: 50%;
+    border-right: solid 1px rgba(0, 0, 0, 0.247);
+    height: 100vh;
+}
+.form__opinion{
+    margin: 8rem auto;
+    width: 50%;
+    height: 100vh;
+}

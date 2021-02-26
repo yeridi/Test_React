@@ -5,7 +5,13 @@
   box-sizing: border-box;
 }
 
-
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#root{
+  height: 100%;
+}
 /* animation */
 
 .our__animation{
@@ -37,10 +43,15 @@
   bottom: 0;
   clip-path: polygon(100% 0,0 100%, 100% 100%);
 }
-.our__animation img{
-  width: 25%;
+/* .our__animation img{
+  width: 100%;
+} */
+.our__animation .animation__model{
+  width: 45%;
+  height: 500px;
   display: block;
   margin: auto;
+  background: red;
   position: relative;
 }
 .container__animation{
@@ -75,8 +86,30 @@
   margin-bottom: 7rem;
 }
 
+/* opinion */
+
+.opinion__each{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;
+}
+.opinion h2{
+  color:rgb(51, 48, 235);
+  margin: 2rem 5rem;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 @media (max-width: 800px){
   .our__animation img{
     width: 40%;
   } 
+  .opinion__each{
+    grid-template-columns: repeat(1,1fr);
+  }
 }

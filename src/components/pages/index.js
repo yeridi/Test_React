@@ -2,13 +2,15 @@ import React from 'react'
 //styles
 
 //Componentes
-import Header from '../header'
-import Section from '../section'
-import Info from '../info'
-import Example from '../example-model'
-import Footer from '../footer'
+import Header from '../main/header'
+import Section from '../main/section'
+import Info from '../main/info'
+import Example from '../main/example-model'
+import Footer from '../main/footer'
 import App from '../../App'
-import Eachmodel from '../each-model'
+import Eachmodel from '../main/each-model'
+import Opinion from '../main/opinion'
+import EachOpinion from '../main/each-opinion'
 
 //images
 import IMG from '../../images/image1.svg'
@@ -43,7 +45,29 @@ class Index extends React.Component{
                 "id": 6,
                 "title": "Model Importand",
                 "image":IMG2
-            }]
+            }],
+            opinion:[{
+                "id":1,
+                "name":"Juan Carlos Bodoque",
+                "opinion":"My opinion about the page web is so vrazy and very weel, beacuse i never seen something like this. It has some problems beacuse it could be a first test but i enjoyed the page web, i recommend it so much",
+                "img":"https://www.lifeder.com/wp-content/uploads/2016/08/tipos-de-felicidad-lifeder-imagen.jpg",
+                "date":"01/01/2021"
+            },
+            {
+                "id":2,
+                "name":"Tulio Triviño",
+                "opinion":"My opinion about the page web is so vrazy and very weel, beacuse i never seen something like this. It has some problems beacuse it could be a first test but i enjoyed the page web, i recommend it so much",
+                "img":"https://assets.entrepreneur.com/content/3x2/2000/20160728155134-Depositphotos-8807359-l-2015.jpeg",
+                "date":"01/01/2021"
+            },
+            {
+                "id":3,
+                "name":"Pedro Juanin Federico",
+                "opinion":"My opinion about the page web is so vrazy and very weel, beacuse i never seen something like this. It has some problems beacuse it could be a first test but i enjoyed the page web, i recommend it so much",
+                "img":"https://lamenteesmaravillosa.com/wp-content/uploads/2017/05/persona-que-es-feliz.jpg",
+                "date":"01/01/2021"
+            }
+            ]
         }
     }
     render(){
@@ -68,6 +92,20 @@ class Index extends React.Component{
                             })}
                         </div>
                     </div>
+                </div>
+                <Opinion/>
+                <div className="opinion"><h2>THEIR OPINIONS</h2> </div>
+                <div className="opinion__each"> 
+                    {this.state.opinion.map((modelp)=>{
+                        return(
+                            <EachOpinion
+                                name={modelp.name}
+                                opinion={modelp.opinion}
+                                image={modelp.img}
+                                date={modelp.date}
+                            />
+                        )
+                    })}
                 </div>
                 <Footer/>
             </>
