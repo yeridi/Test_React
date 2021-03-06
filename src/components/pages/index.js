@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 //styles
 
 //Componentes
@@ -24,27 +25,33 @@ class Index extends React.Component{
             data:[{
                 "id": 1,
                 "title": "Model Animated",
-                "image":IMG
+                "image":IMG,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             },{
                 "id": 2,
                 "title": "Model Map",
-                "image":IMG2
+                "image":IMG2,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             },{
                 "id": 3,
                 "title": "Model of people",
-                "image":IMG3
+                "image":IMG3,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             },{
                 "id": 4,
                 "title": "Models Random",
-                "image":IMG
+                "image":IMG,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             },{
                 "id": 5,
                 "title": "Model Artistic",
-                "image":IMG
+                "image":IMG,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             },{
                 "id": 6,
                 "title": "Model Importand",
-                "image":IMG2
+                "image":IMG2,
+                "description":'El modelado 3D es el proceso de desarrollo de una representación matemática de cualquier objeto tridimensional (ya sea inanimado o vivo) a través de un software especializado. Al producto se le llama modelo 3D. Se puede visualizar como una imagen bidimensional mediante un proceso llamado renderizado 3D o utilizar en una simulación por computadora de fenómenos físicos. El modelo también se puede crear físicamente usando dispositivos de impresión 3D.'
             }],
             opinion:[{
                 "id":1,
@@ -84,13 +91,16 @@ class Index extends React.Component{
                         <div className="all__model">
                             {this.state.data.map((model)=>{
                                 return(
-                                    <Eachmodel
-                                        title={model.title}
-                                        image={model.image}
-                                    />
+                                    <>
+                                        <Eachmodel
+                                            title={model.title}
+                                            image={model.image}
+                                        />
+                                    </>
                                 )
                             })}
                         </div>
+                        <Link to={'/inicio/modelos'}><button className="button__index">Watch all the models</button></Link>
                     </div>
                 </div>
                 <Opinion/>

@@ -12,9 +12,9 @@ const Header=()=>{
                         <img src={img}></img>
                     </div>
                     <ul>
-                        <a href="*">Home</a>
+                        <a href="/inicio">Home</a>
                         <a href="*">Projects</a>
-                        <a href="*">Donations</a>
+                        <a href="/inicio/opinion">Opinion</a>
                         <a href="*">Extra</a>
                     </ul>
                 </div>

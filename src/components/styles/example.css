@@ -43,6 +43,8 @@
 .example__content .example__model{
     overflow: hidden;
     margin: auto;
+    width: 100%;
+    height: 300px;
 }
 .example__model img{
     display: block;

@@ -1,0 +1,49 @@
+.model__header{
+    width: 100%;
+    background:rgb(51, 48, 235);
+    height: 75px;
+}
+.model__each__information{
+    width: 100%;
+    overflow: hidden;
+    margin: 5rem auto;
+    text-align: center;
+}
+.model__each__information img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+}
+.model__each__information h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    color:rgb(51, 48, 235);
+}
+.model__each__information h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 350;
+    margin: 3rem auto;
+}
+.models__info__container{
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.all__models{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.each__model__information p{
+    text-align: justify;
+    padding: 2rem;
+}
+.each__model__information img{
+    width: 100%;
+    display: block;
+    margin: 2rem auto 1rem;
+}

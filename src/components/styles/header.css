@@ -40,3 +40,23 @@
     border-radius: 1rem;
     background: rgb(96, 93, 255);
 }
+/* for the page initial */
+.button__index{
+    display: block;
+    width: 30%;
+    background: none;
+    outline: none;
+    margin: 1rem auto;
+    padding: 1rem;
+    background:  rgb(51, 48, 235);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    border: none;
+    color:#fff;
+}
+.button__index:hover{
+    background: #ffff;
+    color:rgb(51, 48, 235);
+    border: solid 1px #000;
+}

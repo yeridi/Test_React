@@ -29,18 +29,20 @@ class Opinion extends React.Component{
     render(){
         return(
             <>
-                <div className="opinion__all">
-                    <div className="opinion__all__container">
-                        <div className="example__opinion">
-                            <EachOpinion
-                                {...this.state.form}
-                            />
-                        </div>
-                        <div className="form__opinion">
-                            <Form 
-                                onChange={this.handleChange}
-                                form={this.state.form}
-                            />
+                <div className="opinion__general">
+                    <div className="opinion__all">
+                        <div className="opinion__all__container">
+                            <div className="example__opinion">
+                                <EachOpinion
+                                    {...this.state.form}
+                                />
+                            </div>
+                            <div className="form__opinion">
+                                <Form 
+                                    onChange={this.handleChange}
+                                    form={this.state.form}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

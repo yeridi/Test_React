@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/models.css'
 
 class Eachmodel extends React.Component{
+    
     render(){
         const {title,image} = this.props;
 

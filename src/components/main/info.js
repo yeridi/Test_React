@@ -10,6 +10,7 @@ import IMG3 from '../images/image3.svg' */
 //three.js
 import {Canvas} from 'react-three-fiber'
 import {OrbitControls, softShadows, Loader} from '@react-three/drei'
+import {DoubleSide} from 'three'
 //models
 import Model from '../three/Castle'
 import Spider from '../three/Spider'
@@ -18,6 +19,14 @@ import Floor from '../three/floor'
 import Mutant from '../three/Newmutant'
 
 softShadows();
+/* function Suelo(){
+    return(
+        <mesh rotation={[-Math.PI/2,0,0]} position={[0,-0.8,0]}>
+            <planeBufferGeometry attach="geometry" args={[10,10]}/>
+            <meshPhysicalMaterial attach="material" color="red" side={DoubleSide} />
+        </mesh>
+        )
+} */
 
 const Info=()=>{
     return(

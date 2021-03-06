@@ -7,7 +7,7 @@ import './App.css';
 //images
 /* import IMG from'./images/adventure.png' */
 //models
-import Cat from './components/three/Cat'
+import Fox from './components/three/Fox'
 import Lights from './components/three/lights'
 import Floor from './components/three/floor'
 
@@ -20,13 +20,11 @@ function App() {
           <Canvas
               colorManagement
               shadowMap
-              camera={{position:[10,5,-8]}}
+              camera={{position:[15,28,70]}}
           >
             <Suspense fallback={null}>
-              <Cat/>
+              <Fox/>
               <Lights/>
-              <Floor/>
-              <OrbitControls/>
             </Suspense>
           </Canvas>
           </div>

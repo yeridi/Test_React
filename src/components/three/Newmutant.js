@@ -21,6 +21,7 @@ export default function Mutant(props) {
       <group rotation={[Math.PI / 2, 0, 0]} scale={[0.01, 0.01, 0.01]}>
         <primitive object={nodes.MutantHips} />
         <skinnedMesh
+          /* x */
           material={materials['mutant_M.001']}
           geometry={nodes.MutantMesh.geometry}
           skeleton={nodes.MutantMesh.skeleton}

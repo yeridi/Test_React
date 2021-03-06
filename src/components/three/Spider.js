@@ -10,10 +10,6 @@ import { useGLTF } from '@react-three/drei/useGLTF'
 import { useAnimations } from '@react-three/drei/useAnimations'
 
 export default function Spider(props) {
-  /* useEffect(()=>{
-    actions.animation.amethist_walker.walk.play();
-    console.log(actions)
-  }) */
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('../../../models/spider/source/spider.gltf')
   const { actions } = useAnimations(animations, group)

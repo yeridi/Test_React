@@ -1,16 +1,15 @@
 *{
-  text-decoration: none;
-  margin: 0 ;
-  padding: 0 ;
-  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
 }
 
 html,body{
   height: 100%;
   width: 100%;
-}
-#root{
-  height: 100%;
 }
 /* animation */
 
@@ -51,7 +50,6 @@ html,body{
   height: 500px;
   display: block;
   margin: auto;
-  background: red;
   position: relative;
 }
 .container__animation{
